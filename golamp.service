@@ -1,0 +1,14 @@
+[Unit]
+Description=golamp led service
+After=network.target unicorn.service
+
+[Service]
+Type=simple
+User=pi
+ExecStart=/home/pi/golamp/golamp
+WorkingDirectory=/home/pi/golamp
+Restart=on-failure
+startLimitIntervalSec=10
+
+[Install]
+WantedBy=multi-user.target
