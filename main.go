@@ -2,10 +2,10 @@ package main
 
 import (
 	"fmt"
-	"time"
 	"os"
 	"os/signal"
 	"syscall"
+	"time"
 
 	unicorn "github.com/arussellsaw/unicorn-go"
 )
